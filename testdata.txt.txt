@@ -1,0 +1,30 @@
+TEST CASE 1:
+PLACE 6,0,NORTH
+Output: Out of bounds!
+
+TEST CASE 2:
+PLACE 3,3,EAST
+MOVE
+MOVE
+Output: Invalid direction! Out of bounds!
+Output: Current Position: 4,3,EAST
+LEFT
+MOVE
+MOVE
+Output: Invalid direction! Out of bounds!
+Output: Current Position: 4,4,NORTH
+
+TEST CASE 2:
+PLACE 0,0,NORTH
+LEFT
+REPORT
+Output: Current Position: 0,0,WEST
+LEFT
+REPORT
+Output: Current Position: 0,0,SOUTH
+LEFT
+REPORT
+Output: Current Position: 0,0,EAST
+LEFT
+REPORT
+Output: Current Position: 0,0,NORTH
